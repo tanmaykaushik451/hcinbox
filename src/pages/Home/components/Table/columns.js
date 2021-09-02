@@ -4,6 +4,7 @@ import TagsCell from "./TagsCell/TagsCell"
 import AssignedCell from "./AssignedCell/AssignedCell"
 import SKUCell from "./SKUCell/SKUCell"
 import MoreCell from "./MoreCell/MoreCell"
+import DescriptionCell from "./DescriptionCell/DescriptionCell"
 
 export const COLUMNS =[
     {
@@ -43,7 +44,7 @@ export const COLUMNS =[
         Header : 'Description',
         accessor :'description',
         Cell: ()=>{
-            return <AssignedCell/>         }
+            return <DescriptionCell/>         }
     },
     {
         Header : '+',
