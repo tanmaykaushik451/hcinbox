@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="wrapper">
       <Sidebar open={open} />
-      <div className="px-2 w-100">
+      <div className="px-2 w-100 flow-auto">
         <Navigation open={open} toggleMenu={toggleMenu} />
         <Home />
       </div>

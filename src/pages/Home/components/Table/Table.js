@@ -39,8 +39,8 @@ const Table = () => {
     const { getTableProps, getTableBodyProps, headerGroups, rows, page, nextPage, previousPage, pageOptions, state, canNextPage, canPreviousPage, prepareRow, gotoPage, pageCount, setPageSize, selectedFlatRows } = tableInstance
 
     return (
-        <div className="table-container p-3 pr-4 h-100">
-            <div className="bg-light h-100">
+        <div className="table-container p-3 pr-4 h-100 flow-auto">
+            <div className="bg-light h-100 flow-auto">
                 <div className="Table">
                     <div className="Table__table">
                         <table {...getTableProps()} style={{ width: "100%" }}>
