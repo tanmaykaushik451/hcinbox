@@ -1,0 +1,25 @@
+.text-darkgrey{
+    color: #514d4d;
+}
+
+.text-lightgrey{
+    color: #6c6666;
+}
+
+
+.text-bold{
+    font-weight: 500;
+}
+
+.badge{
+    display: inline-block;
+    padding: 0.5em .6em;
+    font-size: 62%;
+    font-weight: 700;
+    height: 21px;
+    line-height: 1;
+}
+
+h6,i{
+    margin: 0;
+}
