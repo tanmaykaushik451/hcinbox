@@ -2,9 +2,7 @@ import React from 'react'
 
 const DescriptionCell = () => {
     return (
-        <div>
-            desc
-        </div>
+        <span className="text-lightgrey">Ana white is a loyal C.......</span>
     )
 }
 
