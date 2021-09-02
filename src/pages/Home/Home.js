@@ -1,4 +1,5 @@
 import React from 'react'
+import Table from './components/Table'
 import "./Home.css"
 
 const Home = () => {
@@ -15,8 +16,14 @@ const Home = () => {
           <i className="fas fa-filter mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Filter</span>
         </div>
         <div className="mr-4">
+          <i className="fas fa-sort mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Sort</span>
+        </div>
+        <div className="mr-4">
           <i className="fas fa-eye mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Hide Fields</span>
         </div>
+      </div>
+      <div>
+        <Table/>
       </div>
     </div>
   )
