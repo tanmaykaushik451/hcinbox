@@ -1,25 +1,25 @@
 import React from 'react'
+import "./Home.css"
 
 const Home = () => {
-    return (
-        <div className="row no-gutters">
-            <div className="col-md-12">
-            <main id="content">
-            <h1 className="page-header">Homepage</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </main>
-            </div>
-            Home
+  return (
+    <div className="d-flex flex-column mt-2">
+      <div className="d-flex ml-3 pb-2 home-pills">
+        <div className="mr-4">
+          <i className="fas fa-table mr-2 text-primary"></i><span className="text-primary text-bold">Table</span>
         </div>
-    )
+        <div className="mr-4">
+          <i className="fas fa-layer-group mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Group</span>
+        </div>
+        <div className="mr-4">
+          <i className="fas fa-filter mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Filter</span>
+        </div>
+        <div className="mr-4">
+          <i className="fas fa-eye mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Hide Fields</span>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Home
