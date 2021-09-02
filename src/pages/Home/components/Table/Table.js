@@ -3,6 +3,7 @@ import React, { useMemo } from 'react'
 import { useTable, useSortBy, usePagination, useRowSelect } from "react-table"
 import { COLUMNS } from "./columns"
 import MOCK from "./MOCK.json"
+import {Checkbox} from "./Checkbox/Checkbox"
 
 
 
@@ -18,7 +19,22 @@ const Table = () => {
             pageIndex: 0,
             pageSize: 1000
         }
-    }, useSortBy, usePagination, useRowSelect)
+    }, useSortBy, usePagination, useRowSelect,(hooks)=>{
+        hooks.visibleColumns.push((columns)=>{
+            return[
+                {
+                    id:"selection",
+                    Header:({getToggleAllRowsSelectedProps})=>(
+                        <Checkbox {...getToggleAllRowsSelectedProps()}/>
+        ),
+                    Cell:({row})=>(
+                        <Checkbox {...row.getToggleRowSelectedProps()}/>
+                    )
+                },
+                ...columns
+            ]
+        })
+    })
 
     const { getTableProps, getTableBodyProps, headerGroups, rows, page, nextPage, previousPage, pageOptions, state, canNextPage, canPreviousPage, prepareRow, gotoPage, pageCount, setPageSize, selectedFlatRows } = tableInstance
 
