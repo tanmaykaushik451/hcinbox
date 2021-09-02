@@ -20,6 +20,11 @@
     line-height: 1;
 }
 
+.breadcrumb{
+    margin-bottom: 0px !important;
+    padding: 0rem 1rem !important;
+}
+
 h6,i{
     margin: 0;
 }
