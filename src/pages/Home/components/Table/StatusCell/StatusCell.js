@@ -1,10 +1,9 @@
 import React from 'react'
+import "./StatusCell.css"
 
 const StatusCell = () => {
     return (
-        <div>
-            status
-        </div>
+            <span className="badge badge-primary statuscell">+ Active</span>
     )
 }
 
