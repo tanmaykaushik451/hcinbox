@@ -1,0 +1,18 @@
+.table-container {
+  background: rgba(211, 211, 211, 0.644);
+}
+.Table__table tbody, .Table__table td, .Table__table tfoot, .Table__table th, .Table__table thead, .Table__table tr {
+    padding: 1em 0;
+}
+.Table__table td {
+    padding-right: 1em;
+}
+.Table__table th {
+    padding-right: 1em;
+}
+.Table__table tr {
+    border-top: 0.1px solid #eff2f5;
+}
+.Table__table {
+    padding: 0.5em;
+}
