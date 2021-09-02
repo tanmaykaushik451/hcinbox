@@ -4,7 +4,7 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div className="d-flex flex-column mt-2">
+    <div className="d-flex flex-column mt-2 h-100">
       <div className="d-flex ml-3 pb-2 home-pills">
         <div className="mr-4">
           <i className="fas fa-table mr-2 text-primary"></i><span className="text-primary text-bold">Table</span>
@@ -22,9 +22,7 @@ const Home = () => {
           <i className="fas fa-eye mr-2 text-lightgrey"></i><span className="text-lightgrey text-bold">Hide Fields</span>
         </div>
       </div>
-      <div>
         <Table/>
-      </div>
     </div>
   )
 }
